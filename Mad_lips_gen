@@ -1,0 +1,5 @@
+name_1 = input("Please enter a name: ")
+verb_1 = input("Please enter a verb: ")
+adj_1 = input("Please enter a adjective: ")
+
+print(f'Omg did you know {name_1} is a really good {verb_1} they are so {adj_1}')
