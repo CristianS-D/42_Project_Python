@@ -1,0 +1,30 @@
+import random
+
+print("this is a number guessing game guess a number between 1-100, you have 5 tries ")
+#generating number
+x = random.randint(1,101)
+
+# initilizing bumber of guesses
+number_of_guess = 1
+while True:
+
+    try:
+        guess = int(input("Guess number: "))
+        if number_of_guess == 5:
+            print("Your all out of guesses, the answer was " + str(x))
+            break
+        elif guess < x:
+            print("Sorry you're to low")
+        elif guess > x:
+            print("Sorry you're to high")
+
+        elif guess == x:
+            print("Congrats you figured it out!!!")
+            break
+
+        number_of_guess+=1
+
+    except (ValueError):
+        print("Value Error Only input numbers please")
+
+
