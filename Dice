@@ -1,0 +1,18 @@
+import random
+
+#Printing dice
+def roll():
+    x = random.randint(1,6)
+    y = random.randint(1,6)
+    print(x,y)
+
+# while loop
+while True:
+    try:
+        start = str(input('Press Enter to roll your dice or [E] to exit'))
+        if start == (""):
+            roll()
+        elif start == ("E"):
+            break
+    except(ValueError):
+        print("ValueError")
